@@ -6,10 +6,10 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Magnemite',
+            name: 'coconut_palm_tree',
             location: {
-                lat: 44.496470,
-                lng: 11.320180,
+                lat: 33.9747089,
+                lng: -118.3711891,
             }
         },
     ];
