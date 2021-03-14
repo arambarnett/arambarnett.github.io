@@ -10,7 +10,8 @@ function staticLoadPlaces() {
            name: 'coconut_palm_tree',
            location: {
                lat: 35.1211305,
-               lng: -89.9774153,   
+               lng: -89.9774153,
+               alt: 26,   
 
 
            },
@@ -19,6 +20,7 @@ function staticLoadPlaces() {
            location: {
                lat: 33.973690,
                lng: -118.371050,
+               alt: 26,
                
                
            },
@@ -27,6 +29,7 @@ function staticLoadPlaces() {
             location: {
                 lat: 34.004490,
                 lng: -118.448463,
+                alt: 26,
 
 
            }
@@ -41,13 +44,13 @@ function renderPlaces(places) {
    places.forEach((place) => {
        let latitude = place.location.lat;
        let longitude = place.location.lng;
+       let altitude = place.location.alt;
        
        
 
 
        let model = document.createElement('a-entity');
-       model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute('position', {x: 0, y: 30, z: 0});
+       model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}; altitude: ${altitude};`);
        model.setAttribute('gltf-model', './assets/coconut_palm_tree/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
