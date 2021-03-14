@@ -48,7 +48,7 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.object3D.position.set(0, 0, 0);
+       model.object3D.position.set(0, 30, 0);
        model.setAttribute('gltf-model', './assets/coconut_palm_tree/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
