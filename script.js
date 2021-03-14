@@ -10,8 +10,8 @@ function staticLoadPlaces() {
            name: 'coconut_palm_tree',
            location: {
                lat: 35.1211305,
-               lng: -89.9774153,
-              
+               lng: -89.9774153,   
+
 
            },
            // Aram's Address
@@ -42,7 +42,6 @@ function renderPlaces(places) {
        let latitude = place.location.lat;
        let longitude = place.location.lng;
        
-
        
 
 
