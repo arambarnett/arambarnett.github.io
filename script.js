@@ -10,6 +10,11 @@ function staticLoadPlaces() {
            location: {
                lat: 35.1211305,
                lng: -89.9774153,
+           },
+            name: 'coconut_palm_tree',
+            location: {
+                lat: 33.973690,
+                lng: -118.371050,
            }
        },
    ];
