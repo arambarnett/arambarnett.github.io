@@ -11,7 +11,7 @@ function staticLoadPlaces() {
            location: {
                lat: 35.1211305,
                lng: -89.9774153,
-               position= "0 30 0",
+               
 
            },
            // Aram's Address
