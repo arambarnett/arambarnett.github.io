@@ -11,18 +11,21 @@ function staticLoadPlaces() {
            location: {
                lat: 35.1211305,
                lng: -89.9774153,
+               pos: "0 30 0",
            },
            // Aram's Address
            name: 'coconut_palm_tree',
            location: {
                lat: 33.973690,
                lng: -118.371050,
+               pos: "0 30 0",
            },
                // Will's Address
             name: 'coconut_palm_tree',
             location: {
                 lat: 34.004490,
                 lng: -118.448463,
+                pos: "0 30 0",
            }
   
        },
@@ -35,6 +38,7 @@ function renderPlaces(places) {
    places.forEach((place) => {
        let latitude = place.location.lat;
        let longitude = place.location.lng;
+       let position = place.location.pos;
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
@@ -42,7 +46,7 @@ function renderPlaces(places) {
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
        model.setAttribute('scale', '0.25 0.25 0.25');
-       model.setAttribute('position', '0 30 0' );
+
 
        model.addEventListener('loaded', () => {
            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
