@@ -11,14 +11,15 @@ function staticLoadPlaces() {
            location: {
                lat: 35.1211305,
                lng: -89.9774153,
-               
+              
 
            },
            // Aram's Address
            name: 'coconut_palm_tree',
            location: {
-               lat: 33.5825,
-               lng: -118.2217,
+               lat: 33.973690,
+               lng: -118.371050,
+               
                
            },
                // Will's Address
@@ -47,7 +48,7 @@ function renderPlaces(places) {
 
        let model = document.createElement('a-entity');
        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-       model.setAttribute ('position', {x: 0, y: 30, z: 0});
+       model.object3D.position.set(0, 0, 0);
        model.setAttribute('gltf-model', './assets/coconut_palm_tree/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
