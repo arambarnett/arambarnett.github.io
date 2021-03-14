@@ -6,16 +6,25 @@ window.onload = () => {
 function staticLoadPlaces() {
    return [
        {
+           // nam's address
            name: 'coconut_palm_tree',
            location: {
                lat: 35.1211305,
                lng: -89.9774153,
            },
+           // Aram's Address
             name: 'coconut_palm_tree',
             location: {
                 lat: 33.973690,
                 lng: -118.371050,
+           },
+               // Will's Address
+            name: 'coconut_palm_tree',
+            location: {
+                lat: 34.004490,
+                lng: -118.448463,
            }
+           
        },
    ];
 }
