@@ -19,15 +19,15 @@ function staticLoadPlaces() {
            location: {
                lat: 33.5825,
                lng: -118.2217,
-               position= "0 30 0",
+               
            },
                // Will's Address
             name: 'coconut_palm_tree',
             location: {
                 lat: 34.004490,
                 lng: -118.448463,
-                position= "0 30 0",
-    
+
+                
 
            }
   
@@ -41,7 +41,7 @@ function renderPlaces(places) {
    places.forEach((place) => {
        let latitude = place.location.lat;
        let longitude = place.location.lng;
-       let position = place.location.position;
+
        
 
 
