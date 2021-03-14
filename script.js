@@ -11,6 +11,7 @@ function staticLoadPlaces() {
            location: {
                lat: 35.1211305,
                lng: -89.9774153,
+               pos: "0 26 0" ,
               
 
            },
@@ -19,6 +20,7 @@ function staticLoadPlaces() {
            location: {
                lat: 33.973690,
                lng: -118.371050,
+               pos: "0 26 0" , 
                
                
            },
@@ -27,6 +29,7 @@ function staticLoadPlaces() {
             location: {
                 lat: 34.004490,
                 lng: -118.448463,
+                pos: "0 26 0" ,
 
                 
 
@@ -42,6 +45,7 @@ function renderPlaces(places) {
    places.forEach((place) => {
        let latitude = place.location.lat;
        let longitude = place.location.lng;
+       let position = place.location.pos;
 
        
 
