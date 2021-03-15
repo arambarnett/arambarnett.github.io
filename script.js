@@ -9,8 +9,8 @@ function staticLoadPlaces() {
            // nam's address
            name: 'coconut_palm_tree',
            location: {
-               lat: 35.1211305,
-               lng: -89.9774153,
+               lat: 35.388620,
+               lng: -89.980350,
                alt: 26,   
 
 
@@ -20,7 +20,7 @@ function staticLoadPlaces() {
            location: {
                lat: 33.973690,
                lng: -118.371050,
-               alt: 600,
+               alt: 26,
                
                
            },
