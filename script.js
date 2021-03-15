@@ -12,7 +12,6 @@ function staticLoadPlaces() {
                lat: 35.388620,
                lng: -89.980350,
                alt: 30,   
-
                
            },
                // Will's Address
