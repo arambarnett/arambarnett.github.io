@@ -15,7 +15,7 @@ function staticLoadPlaces() {
 
            },
            // Aram's Address
-           name: 'coconut_palm_tree',
+           name: '',
            location: { 
                lat: 33.973690,
                lng: -118.371050,
