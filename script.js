@@ -1,4 +1,13 @@
 window.onload = () => {
+
+    const button = document.querySelector(".say-hi-button")
+    .addEventListener("click", function () {
+      // here you can change also a-scene or a-entity properties, like
+      // changing your 3D model source, size, position and so on
+      // or you can just open links, trigger actions...
+      alert("Hi there!");
+      {
+
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
@@ -52,7 +61,7 @@ function renderPlaces(places) {
        model.setAttribute('gltf-model', './assets/T1/scene.gltf');
        model.setAttribute('rotation', '0 180 0');
        model.setAttribute('animation-mixer', '');
-       model.setAttribute('scale', '10 10 10');
+       model.setAttribute('scale', '1 1 1');
 
 
        model.addEventListener('loaded', () => {
