@@ -17,7 +17,10 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-entity gltf-model="assets/T1.glb" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 33.973690; latitude: -118.371050;"/>
+        <a-assets>
+            <a-asset-item id="T1" src="assets/T1/scene.gltf"></a-asset-item>
+          </a-assets>
+        <a-entity gltf-model="#T1" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="longitude: 33.973690; latitude: -118.371050;"/>
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene> 
 </body>
